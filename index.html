@@ -15,7 +15,7 @@
 
         .mytable thead {
             display: block;
-            height: 50px;
+            /* height: 50px; */
         }
 
         .mytable tbody {
@@ -26,8 +26,8 @@
 
         .mytable tfoot {
             display: block;
-            height: 67px;
-            background-color: orange;
+            /* height: 67px; */
+            /* background-color: orange; */
         }
 
         .common {
@@ -76,11 +76,64 @@
         .white {
             background: #f6f6f6;
         }
+
+        .h60 {
+            height: 60px;
+        }
+
+        .mytable tfoot button {
+            width: 100px;
+            height: 29px;
+            border-radius: 0px;
+            border: none;
+            border: 1px solid #093b42;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+
+        .mytable th,
+        .mytable td {
+            border-right: 1px solid #fff;
+        }
+
+        .mytable tbody td {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .mytable tfoot td {
+            border-bottom: 2px solid #323232;
+        }
+
+        .mytable tbody tr td:first-child {
+            padding-left: 10px;
+        }
+
+        .mytable thead tr:nth-child(2) th {
+            height: 71px;
+            background: #f0f0f0;
+        }
+
+        .xyz {
+            width: 100%;
+            height: 100%;
+            background-color: #f0f0f0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .a {
+            color: #35302c;
+        }
+
+        .a span {
+            font-size: 2em;
+            margin-right: 5px;
+        }
     </style>
 </head>
 
 <body>
-    <table class="mytable" border="1" cellspacing="0" cellpadding="1">
+    <table class="mytable" border="0" cellspacing="0" cellpadding="1">
         <thead>
             <tr>
                 <th>
@@ -100,6 +153,44 @@
                 </th>
                 <th>
                     <div class="common maroon">Premier</div>
+                </th>
+            </tr>
+
+            <tr>
+                <th style="background-color: #fff; width: 159px !important;">
+                    <div class="xyz" style="line-height: 71px;">
+                        Choose a Plan
+                    </div>
+                </th>
+
+                <th>
+                    <div class="a">
+                        <span>$9</span>/mo.
+                    </div>
+                </th>
+
+                <th>
+                    <div class="a">
+                        <span>$9</span>/mo.
+                    </div>
+                </th>
+
+                <th>
+                    <div class="a">
+                        <span>$9</span>/mo.
+                    </div>
+                </th>
+
+                <th>
+                    <div class="a">
+                        <span>$9</span>/mo.
+                    </div>
+                </th>
+
+                <th>
+                    <div class="a">
+                        <span>$9</span>/mo.
+                    </div>
                 </th>
             </tr>
         </thead>
@@ -213,21 +304,21 @@
 
         <tfoot>
             <tr>
-                <td class="common2"></td>
-                <td class="common2">
-                    <button>Sign Up</button>
+                <td class="common2 h60 gray"></td>
+                <td class="common2 h60 gray">
+                    <button class="skyblue">Sign Up</button>
                 </td>
-                <td class="common2">
-                    <button>Sign Up</button>
+                <td class="common2 h60 gray">
+                    <button class="green">Sign Up</button>
                 </td>
-                <td class="common2">
-                    <button>Sign Up</button>
+                <td class="common2 h60 gray">
+                    <button class="yellow">Sign Up</button>
                 </td>
-                <td class="common2">
-                    <button>Sign Up</button>
+                <td class="common2 h60 gray">
+                    <button class="orange">Sign Up</button>
                 </td>
-                <td class="common2">
-                    <button>Sign Up</button>
+                <td class="common2 h60 gray">
+                    <button class="maroon">Sign Up</button>
                 </td>
             </tr>
         </tfoot>
